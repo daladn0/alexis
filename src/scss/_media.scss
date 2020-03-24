@@ -1,0 +1,141 @@
+@media( max-width: 1199px ) {
+	.bg-num_small {
+		&:before {
+			left: 10px;
+      top: 13px;
+		}
+		&:after {
+			top: 25px;
+      left: 65px;
+      transform: rotate(65deg);
+		}
+	}
+
+	.portfolio {
+		&__item {
+			max-width: 310px;
+			margin-bottom: 14px;
+		}
+	}
+
+	.team {
+		&__img {
+			height: 236px;
+		}
+
+		&__text {
+			margin-right: 20px;
+		}
+
+		&__social {
+			padding: 20px 20px;
+		}
+	}
+
+	.work {
+		&__item {
+			max-width: 400px;
+    	padding: 80px 40px 0 50px;
+		}
+	}
+
+	.price {
+		&__item{
+    	max-width: 300px;
+			&:hover {
+				box-shadow: none;
+			}
+		}
+		&__list {
+			li {
+      	margin-bottom: 20px;
+			}
+		}
+	}
+
+	.testimonials {
+		&__img {
+			width: 320px;
+		}
+		&__content {
+			width: 640px;
+			height: 290px;
+	    padding: 20px 20px 0px 20px;
+		}
+		&__text {
+	    margin-bottom: 30px;
+		}
+	}
+
+	.choice {
+		&__text {
+			font-size: 14px;
+		}
+	}
+
+	.blog {
+		&__left-column {
+	    .blog__item {
+	      width: 100%;
+	      margin-top: 75px;
+	    }
+	  }
+
+		&__img {
+			width: 100%;
+			height: 391px;
+		}
+
+		&__item {
+    	padding: 15px;
+		}
+	}
+
+	.get-in-touch {
+		input[type="text"] {
+			width: 48%;
+		}
+	}
+}
+
+@media (max-width: 991px ) {
+	.title {
+		font-size: 45px;
+	}
+
+	.header {
+		&__logo {
+			text-align: center;
+		}
+
+		&__nav {
+			margin: 5px 0 10px;
+		}
+	}
+	
+	.promo {
+		&__item {
+    	font-size: 17px;
+  	}
+	}
+
+	.about-us {
+		&__img {	
+	    width: 450px;
+	    height: 567px;
+		}
+
+		&__content {
+	    max-width: 500px;
+	    padding: 30px 31px;
+
+			.title {
+
+			}
+
+	    p {
+		    font-size: 13px;
+	    }
+		}
+	}
+}
