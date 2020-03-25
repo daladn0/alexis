@@ -168,19 +168,19 @@ body, html {
   }
 
   &_orange {
-    background: linear-gradient(180deg, transparent, $main-color-orange);
+    background: linear-gradient(180deg, #FFF, $main-color-orange);
   }
 
   &_green {
-    background: linear-gradient(180deg, transparent, $main-color-green);
+    background: linear-gradient(180deg, #FFF, $main-color-green);
   }
 
   &_purple {
-    background: linear-gradient(180deg, transparent, $main-color-purple);
+    background: linear-gradient(180deg, #FFF, $main-color-purple);
   }
 
   &_yellow {
-    background: linear-gradient(180deg, transparent, $main-color-yellow);
+    background: linear-gradient(180deg, #FFF, $main-color-yellow);
   }
 }
 
@@ -284,6 +284,10 @@ body, html {
   align-items: center;
   height: 75px;
   background: rgba(255, 255, 255, .9);
+
+  .line {
+    display: none;
+  }
 
   &__logo {
     img {
@@ -397,8 +401,10 @@ body, html {
     width: 555px;
     height: 700px;
     position: absolute;
+    overflow: hidden;
     img {
       width: 100%;
+      height: auto;
     }
   }
 
@@ -904,7 +910,7 @@ body, html {
     width: 556px;
     height: 300px;
     img {
-      max-width: 100%;
+      width: 100%;
     }
   }
 
