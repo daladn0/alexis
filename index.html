@@ -1,9 +1,16 @@
+<!-- TO-DO List -->
+<!-- 1.Добавить пару красивых hover эфектов -->
+<!-- 2.Добавить анимации -->
+<!-- 3.Добавить кнопку скрола вверх -->
+<!-- 4.Добавить валидацию форм -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="UTF-8">
   <title>Alexis</title>
+  <link rel="shortcut icon" href="src/icons/icon.png" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Poppins:400,500,600|Sacramento&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="src/css/bootstrap-reboot.min.css">
   <link rel="stylesheet" href="src/css/bootstrap-grid.min.css">
@@ -13,11 +20,27 @@
   <header class="header">
     <div class="container">
       <div class="row">
-        <div class="header__logo col-md-12 col-lg-2">
+        <div class="header__logo col-sm-2 col-md-12 col-lg-2">
           <a href="/"><img src="src/icons/logo.png" alt="logo"></a>
           <div class="line"></div>
         </div>
         <nav class="header__nav col-md-12 col-lg-9 offset-lg-1 col-xl-8 offset-xl-2">
+          <a href="#" class="header__link">About Us</a>
+          <a href="#" class="header__link">Our Focus</a>
+          <a href="#" class="header__link">Portfolio</a>
+          <a href="#" class="header__link">Our Team</a>
+          <a href="#" class="header__link">Work Steps</a>
+          <a href="#" class="header__link">Pricing</a>
+          <a href="#" class="header__link">Testimonials</a>
+          <a href="#" class="header__link">Blog</a>
+          <a href="#" class="header__link">Contact</a>
+        </nav>
+        <div class="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav class="sidebar">
           <a href="#" class="header__link">About Us</a>
           <a href="#" class="header__link">Our Focus</a>
           <a href="#" class="header__link">Portfolio</a>
@@ -86,28 +109,28 @@
     <div class="container">
       <div class="row">
       <div class="focus__items">
-        <div class="focus__item col-md-5 col-lg-3">
+        <div class="focus__item col-sm-5 col-lg-3">
           <div class="focus__img"><img src="src/icons/focus1.svg" alt="web design logo"></div>
           <div class="focus__title">Web Design</div>
           <div class="focus__text">Analytics release series A financing launch party 
           interaction design android angel investor.</div>
           <div class="focus__color"></div>
         </div>
-        <div class="focus__item col-md-5 col-lg-3">
+        <div class="focus__item col-sm-5 col-lg-3">
           <div class="focus__img"><img src="src/icons/focus2.svg" alt="ux design logo"></div>
           <div class="focus__title">UX Design</div>
           <div class="focus__text">Analytics release series A financing launch party 
           interaction design android angel investor.</div>
           <div class="focus__color"></div>
         </div>
-        <div class="focus__item col-md-5 col-lg-3">
+        <div class="focus__item col-sm-5 col-lg-3">
           <div class="focus__img"><img src="src/icons/focus3.svg" alt="photography logo"></div>
           <div class="focus__title">Photography</div>
           <div class="focus__text">Analytics release series A financing launch party 
           interaction design android angel investor.</div>
           <div class="focus__color"></div>
         </div>
-        <div class="focus__item col-md-5 col-lg-3">
+        <div class="focus__item col-sm-5 col-lg-3">
           <div class="focus__img"><img src="src/icons/focus4.svg" alt="development logo"></div>
           <div class="focus__title">App Development</div>
           <div class="focus__text">Analytics release series A financing launch party 
@@ -434,7 +457,7 @@
             <div class="price__title">Starter</div>
             <div class="price__num">
               <div class="price__circle">
-                <span>$125</span>Per Month
+                <span>$125</span><p>Per Month</p>
               </div>
             </div>
             <ul class="price__list">
@@ -452,7 +475,7 @@
             <div class="price__title">Ultimate</div>
             <div class="price__num">
               <div class="price__circle">
-                <span>$195</span>Per Month
+                <span>$195</span><p>Per Month</p>
               </div>
             </div>
             <ul class="price__list">
@@ -470,7 +493,7 @@
             <div class="price__title">Professional</div>
             <div class="price__num">
               <div class="price__circle">
-                <span>$145</span>Per Month
+                <span>$145</span><p>Per Month</p>
               </div>
             </div>
             <ul class="price__list">
@@ -526,7 +549,7 @@
     <div class="container">
       <div class="row">
         <div class="choice__items">
-          <div class="choice__item col-md-6 col-lg-4">
+          <div class="choice__item col-sm-6 col-lg-4">
             <div class="choice__title">
               <img src="src/icons/choice1.svg" alt="schedule logo">
               Business<br>Growth
@@ -535,7 +558,7 @@
               Success scrum project funding marketing seed money prototype innovator direct hackathon android angel investor.
             </div>
           </div>
-          <div class="choice__item col-md-6 col-lg-4">
+          <div class="choice__item col-sm-6 col-lg-4">
             <div class="choice__title">
               <img src="src/icons/choice2.svg" alt="schedule logo">
               Unlimited<br>Revisions
@@ -544,7 +567,7 @@
               Technology founders churn rate niche market long tail release iteration burn rate backing. Churn rate accelerator.
             </div>
           </div>
-          <div class="choice__item col-md-6 col-lg-4">
+          <div class="choice__item col-sm-6 col-lg-4">
             <div class="choice__title">
               <img src="src/icons/choice3.svg" alt="schedule logo">
               Ultimate<br>Perfection
@@ -553,7 +576,7 @@
               Deployment ownership non-disclosure agreement vesting period crowdfunding success influencer partnership.
             </div>
           </div>
-          <div class="choice__item col-md-6 col-lg-4">
+          <div class="choice__item col-sm-6 col-lg-4">
             <div class="choice__title">
               <img src="src/icons/choice4.svg" alt="schedule logo">
               Smart<br>Experience
@@ -562,7 +585,7 @@
               Success scrum project funding marketing seed money prototype innovator direct hackathon android angel investor.
             </div>
           </div>
-          <div class="choice__item col-md-6 col-lg-4">
+          <div class="choice__item col-sm-6 col-lg-4">
             <div class="choice__title">
               <img src="src/icons/choice5.svg" alt="schedule logo">
               Strict<br>Deadline
@@ -571,7 +594,7 @@
               Technology founders churn rate niche market long tail release iteration burn rate backing. Churn rate accelerator.
             </div>
           </div>
-          <div class="choice__item col-md-6 col-lg-4">
+          <div class="choice__item col-sm-6 col-lg-4">
             <div class="choice__title">
               <img src="src/icons/choice6.svg" alt="schedule logo">
               Award-winning<br>Company
@@ -717,5 +740,7 @@
       </div>
     </div>
   </footer>
+
+  <script src="src/js/main.js"></script>
 </body>
 </html>
