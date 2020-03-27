@@ -868,6 +868,9 @@ body, html {
       -ms-flex-align: center;
           align-items: center;
 }
+.work__photos img {
+  min-width: 100%;
+}
 .work__img {
   position: relative;
   width: 556px;
@@ -1066,6 +1069,7 @@ body, html {
 .testimonials .title, .testimonials .subtitle {
   color: #fff;
   position: absolute;
+  left: 0;
   width: 100%;
 }
 .testimonials .subtitle {
@@ -1484,6 +1488,9 @@ body, html {
     padding: 20px 20px;
   }
 
+  .work__img {
+    max-width: 100%;
+  }
   .work__item {
     max-width: 400px;
     padding: 80px 40px 0 50px;
@@ -1587,6 +1594,11 @@ body, html {
   .about-us__content {
     max-width: 500px;
     padding: 30px 31px;
+    text-align: center;
+  }
+  .about-us__content .title {
+    width: 88%;
+    text-align: center;
   }
   .about-us__content p {
     font-size: 13px;
@@ -2026,6 +2038,9 @@ body, html {
     font-size: 13px;
   }
 
+  .work__img {
+    height: 291px;
+  }
   .work__item {
     max-width: 45%;
     height: 180px;
@@ -2136,6 +2151,88 @@ body, html {
   .get-in-touch__item:nth-child(4) {
     width: 100%;
     text-align: center;
+  }
+}
+@media (max-width: 575px) {
+  .header .row {
+    padding: 0 15px;
+  }
+
+  .portfolio__item {
+    width: 100%;
+  }
+
+  .team__items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .team__item {
+    max-width: 65%;
+    margin: 25px;
+    padding: 20px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .team__img {
+    width: 263px;
+    height: 270px;
+  }
+  .team__content {
+    display: none;
+  }
+
+  .stats {
+    height: 500px;
+    padding: 50px 0;
+  }
+  .stats__items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .stats__item {
+    width: 50%;
+  }
+
+  .testimonials {
+    padding: 50px 15px;
+  }
+  .testimonials__text {
+    font-size: 12px;
+  }
+
+  .choice__text {
+    margin: 0 auto;
+  }
+
+  .blog__img {
+    width: 95%;
+  }
+  .blog .blog__left-column .blog__item {
+    width: 95%;
+  }
+  .blog__item {
+    width: 95%;
+  }
+
+  .get-in-touch {
+    height: 1278px;
+  }
+  .get-in-touch form input[type="text"] {
+    width: 100%;
+  }
+  .get-in-touch__footer {
+    height: 270px;
   }
 }
 

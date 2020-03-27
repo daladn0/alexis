@@ -33,6 +33,11 @@
 	}
 
 	.work {
+		&__img {
+			max-width: 100%;
+
+		}
+
 		&__item {
 			max-width: 400px;
     	padding: 80px 40px 0 50px;
@@ -157,9 +162,11 @@
 		&__content {
 	    max-width: 500px;
 	    padding: 30px 31px;
+	    text-align: center;
 
-			.title {
-
+	    .title {
+	    	width: 88%;
+				text-align: center;
 			}
 
 	    p {
@@ -628,6 +635,10 @@
 	}
 
 	.work {
+		&__img {
+			height: 291px;
+		}
+
 		&__item {
 			max-width: 45%;
 			height: 180px;
@@ -769,6 +780,101 @@
 				width: 100%;
 				text-align: center;
 			}
+		}
+	}
+}
+
+@media( max-width: 575px ) {
+	.header {
+		.row {
+			padding: 0 15px;
+		}
+	}
+
+	.portfolio {
+		&__item {
+			width: 100%;
+		}
+	}
+
+	.team {
+		&__items {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		&__item {
+			max-width: 65%;
+			margin: 25px;
+			padding: 20px 0;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		&__img {
+			width: 263px;
+			height: 270px;
+		}
+
+		&__content {
+			display: none;
+		}
+	}
+
+	.stats {
+		height: 500px;
+		padding: 50px 0;
+
+		&__items {
+			flex-wrap: wrap;
+		}
+
+		&__item {
+			width: 50%;
+		}
+	}
+
+	.testimonials {
+		padding: 50px 15px;
+
+		&__text {
+			font-size: 12px;
+		}
+	}
+
+	.choice {
+		&__text {
+			margin: 0 auto;
+		}
+	}
+
+	.blog {
+		&__img {
+			width: 95%;
+		}
+
+		.blog__left-column {
+			.blog__item	 {
+				width: 95%;
+			}
+		}
+
+		&__item {
+			width: 95%;
+		}
+	}
+
+	.get-in-touch {
+		height: 1278px;
+		form {
+			input[type="text"] {
+				width: 100%;
+			}
+		}
+
+		&__footer {
+			height: 270px;
 		}
 	}
 }

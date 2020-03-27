@@ -911,6 +911,9 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center;
+    img {
+      min-width: 100%;
+    }
   }
 
   &__img {
@@ -1120,6 +1123,7 @@ body, html {
   .title, .subtitle{
     color: #fff;
     position: absolute;
+    left: 0;
     width: 100%;
   }
 
