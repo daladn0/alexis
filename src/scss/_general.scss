@@ -1300,10 +1300,6 @@ body, html {
     overflow: hidden;
     img {
       max-width: 100%;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
     }
   }
 
@@ -1534,6 +1530,17 @@ body, html {
     }
   }
 
+}
+
+.scrolltotop {
+  display: none;
+
+  position: fixed;
+  bottom: 35px;
+  right: 35px;
+
+  width: 60px;
+  height: 60px;
 }
 
 @import "_media";
