@@ -112,15 +112,6 @@ body, html {
       background: #E64D34;
     }
   }
-  &_green {
-    background: $main-color-green;
-  }
-  &_purple {
-    background: $main-color-purple;
-  }
-  &_yellow {
-    background: $main-color-yellow;
-  }
 
   &_outline {
     background: none;
@@ -290,10 +281,6 @@ body, html {
   }
 
   .sidebar {
-    display: none;
-  }
-
-  .line {
     display: none;
   }
 
@@ -688,6 +675,28 @@ body, html {
     background: #fff;
     text-align: center;
 
+    transition: .3s all;
+    cursor: pointer;
+
+    &:hover {
+     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    &_active {
+      &:nth-child(1) {
+        box-shadow: 0px 0px 20px 0px rgba(252, 95, 69, .3);
+      }
+      &:nth-child(2) {
+        box-shadow: 0px 0px 20px 0px rgba(56, 198, 149, .3);
+      }
+      &:nth-child(3) {
+        box-shadow: 0px 0px 20px 0px rgba(178, 124, 245, .3);
+      }
+      &:nth-child(4) {
+        box-shadow: 0px 0px 20px 0px rgba(254, 185, 96, .3);
+      }
+    }
+
     &:nth-child(1) {
       .team__name {
         color: $main-color-orange;
@@ -754,7 +763,35 @@ body, html {
       width: 80px;
       height: 60px;
     }
+  }
+
+  &__content {
+    display: none;
     
+    &_active {
+      display: block;
+    }
+
+    &:nth-child(2) {
+      .team__pointer {  
+        left: 0;
+      }
+    }
+    &:nth-child(3) {
+      .team__pointer {  
+        left: 292px;
+      }
+    }
+    &:nth-child(4) {
+      .team__pointer {  
+        left: 584px;
+      }
+    }
+    &:nth-child(5) {
+      .team__pointer {  
+        left: 876px;
+      }
+    }
   }
  
   &__person {
@@ -1287,8 +1324,13 @@ body, html {
 
   &__left-column {
     .blog__item {
-      width: 555px;
       margin-top: 23px;
+    }
+    .blog__date {
+      span{ color: $main-color-orange; }
+    }
+    .blog__text {
+      a{ color: $main-color-orange; }
     }
   }
 
@@ -1306,6 +1348,32 @@ body, html {
   &__articles {
     display: flex;
     flex-wrap: wrap;
+    .blog__item {
+      &:nth-child(1) {
+        .blog__date {
+          span{ color: $main-color-green; }
+        }
+        .blog__text {
+          a{ color: $main-color-green; }
+        }
+      }
+      &:nth-child(2) {
+        .blog__date {
+          span{ color: $main-color-purple; }
+        }
+        .blog__text {
+          a{ color: $main-color-purple; }
+        }
+      }
+      &:nth-child(3) {
+        .blog__date {
+          span{ color: $main-color-yellow; }
+        }
+        .blog__text {
+          a{ color: $main-color-yellow; }
+        }
+      }
+    }
   }
 
   &__item {
@@ -1314,39 +1382,6 @@ body, html {
     height: 210px;
     padding: 30px 35px;
     background: #FFF;
-    &:nth-child(1) {
-      .blog__date {
-        span{ color: $main-color-green; }
-      }
-      .blog__text {
-        a{ color: $main-color-green; }
-      }
-    }
-    &:nth-child(2) {
-      .blog__date {
-        span{ color: $main-color-purple; }
-      }
-      .blog__text {
-        a{ color: $main-color-purple; }
-      }
-    }
-    &:nth-child(3) {
-      .blog__date {
-        span{ color: $main-color-yellow; }
-      }
-      .blog__text {
-        a{ color: $main-color-yellow; }
-      }
-    }
-
-    &:nth-child(4) {
-      .blog__date {
-        span{ color: $main-color-orange; }
-      }
-      .blog__text {
-        a{ color: $main-color-orange; }
-      }
-    }
   }
 
   &__date {
@@ -1538,9 +1573,50 @@ body, html {
   position: fixed;
   bottom: 35px;
   right: 35px;
+  z-index: 1000;
 
   width: 60px;
   height: 60px;
+}
+
+.modal__wrapper {
+  &_active {
+    display: flex;
+  }
+
+  position: relative;
+  display: none;
+  align-items: center;
+  
+  position: fixed;
+  top: 0;
+  z-index: 2000;
+
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .7);
+
+  .modal__close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+
+    width: 20px;
+    cursor: pointer;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .team__content {
+    display: block;
+    margin: 0;
+    .team__pointer {
+      display: none;
+    }
+  }
 }
 
 @import "_media";
