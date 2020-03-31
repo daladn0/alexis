@@ -38,12 +38,23 @@ $(document).ready(function(){
 		$('.sidebar').toggleClass('sidebar_active');
 	});
 
-  // Tabs 
+  // Tabs
+
+    // team
   $('.team__items').on('click', '.team__item:not(.team__item_active)', function() {
     $(this)
       .addClass('team__item_active').siblings().removeClass('team__item_active')
       .closest('div.container').find('div.team__content').removeClass('team__content_active')
       .eq($(this).index()).addClass('team__content_active');
+  });
+
+    // testimonials
+  $('.testimonials__tabs').on('click', '.testimonials__circle:not(.testimonials__circle_active)', function() {
+    console.log('!');
+    $(this)
+      .addClass('testimonials__circle_active').siblings().removeClass('testimonials__circle_active')
+      .closest('div.container').find('div.testimonials__item').removeClass('testimonials__item_active')
+      .eq($(this).index()).addClass('testimonials__item_active');
   });
 
   // Modal window & Team

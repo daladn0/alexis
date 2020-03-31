@@ -1157,6 +1157,11 @@ body, html {
     margin-top: 180px;
   }
 
+  .row {
+    position: relative;
+    height: 400px;
+  }
+
   .title, .subtitle{
     color: #fff;
     position: absolute;
@@ -1166,6 +1171,16 @@ body, html {
 
   .subtitle {
     margin-top: 75px;
+  }
+
+  &__item {
+    position: absolute;
+    display: none;
+    align-items: center;
+
+    &_active {
+      display: flex;
+    }
   }
 
   &__img {
@@ -1244,9 +1259,41 @@ body, html {
     }
 
     &_active {
-      border-color: $main-color-orange;
-      &:before {
-        background: $main-color-orange;
+      &:nth-child(1) {
+        border-color: $main-color-orange;
+        &:before {
+          background: $main-color-orange;
+        }
+      }
+      &:nth-child(2) {
+        border-color: $main-color-green;
+        &:before {
+          background: $main-color-green;
+        }
+      }
+      &:nth-child(3) {
+        border-color: $main-color-purple;
+        &:before {
+          background: $main-color-purple;
+        }
+      }
+      &:nth-child(4) {
+        border-color: $main-color-yellow;
+        &:before {
+          background: $main-color-yellow;
+        }
+      }
+      &:nth-child(5) {
+        border-color: $main-color-orange;
+        &:before {
+          background: $main-color-orange;
+        }
+      }
+      &:nth-child(6) {
+        border-color: $main-color-green;
+        &:before {
+          background: $main-color-green;
+        }
       }
     }
   }
